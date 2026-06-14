@@ -1,0 +1,39 @@
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center; /* aligns the title and all other text contents */
+}
+
+img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+.plants {
+  display: flex; 
+  margin: auto; /* the container is in the center */
+  width: 50%; /* it is not all over the page, I do not have to hardcode the width of info */
+  gap: 32px;
+}
+.info {
+  display: flex;
+  flex-direction: column;  
+  align-items: center;  /* both the img and the text are aligned in the center */
+}
+
+/* do not edit this footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eee;
+}

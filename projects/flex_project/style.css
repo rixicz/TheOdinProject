@@ -1,25 +1,37 @@
 * {
+    box-sizing: border-box; /* so the padding does not increase the width and height of the elements */
     margin: 0;
     font-family: "Roboto", sans-serif;
+}
+
+body {
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
 }
 
 nav {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     width: 100%;
     background-color: #1F2937;
+    padding: 20px;
 }
+
 .container {
     display: flex;
+    flex-direction: column;
     width: 60%;
     margin: auto;
-    flex-direction: column;
-    gap: 50px;
+    gap: 20px;
 }
+
 .header {
     display: flex;
-    align-items: center;
+    flex-direction: row;
     justify-content: space-between;
+    align-items: center;
 }
 
 ul {
@@ -46,10 +58,19 @@ li {
     width: 50%;
     gap: 10px;
 }
-
+.intro {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+}
 .slogan {
     font-size: 48px;
     font-weight: 900;
+}
+
+.image-holder {
+    display: flex;
+    max-width: 50%;
 }
 
 button {
@@ -59,4 +80,41 @@ button {
     border: none;
     border-radius: 10%;
     padding: 8px 24px;
+}
+
+button, li:hover {
+    cursor: pointer;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    background-color: white;
+    width: 60%;
+    gap: 18px;
+}
+
+.info-header {
+    display: flex;
+    font-size: 24px;
+    font-weight: bold;
+}
+.objects {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%
+}
+.object {
+    display: flex;
+    color: white;
+    border-color: #3882F6;
+    border-style: solid;
+    border-width: medium;
+    width: 180px;
+    height: 180px;
+    border-radius: 10%;
+    margin: 20px;
 }

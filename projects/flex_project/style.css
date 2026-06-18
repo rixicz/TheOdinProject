@@ -22,6 +22,7 @@ nav {
 .container {
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 60%;
     margin: auto;
     gap: 20px;
@@ -98,7 +99,7 @@ button, li:hover {
 
 .info-header {
     display: flex;
-    font-size: 24px;
+    font-size: 36px;
     font-weight: bold;
 }
 .objects {
@@ -107,9 +108,15 @@ button, li:hover {
     justify-content: space-between;
     width: 100%
 }
+
+.object-with-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .object {
     display: flex;
-    color: white;
+    flex-direction: column;
     border-color: #3882F6;
     border-style: solid;
     border-width: medium;
@@ -117,4 +124,25 @@ button, li:hover {
     height: 180px;
     border-radius: 10%;
     margin: 20px;
+}
+
+.quote-box {
+    display: flex;
+    width: 100%;
+    padding: 60px;
+    background-color: #e5e7eb;
+}
+
+.quote {
+    color: #1f2937;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 36px;
+}
+
+.signature {
+    display: flex;
+    align-self: flex-end;
+    font-size: 24px;
+    font-weight: 700;
 }

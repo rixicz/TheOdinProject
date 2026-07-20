@@ -14,7 +14,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
     background-color: #1F2937;
     padding: 20px;
 }
@@ -31,6 +30,7 @@ nav {
 .header {
     display: flex;
     flex-direction: row;
+    width: 100%; /*-without it the header would not be spaced out */
     justify-content: space-between;
     align-items: center;
 }
@@ -49,14 +49,13 @@ li {
 
 .logo {
     color: #f9faf8;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .text {
     display: flex;
     flex-direction: column;
     color:#f9faf8;
-    width: 50%;
     gap: 10px;
 }
 .intro {
@@ -79,7 +78,7 @@ li {
     justify-content: center;
     align-items: center;
     font-size: 20px;
-    max-width: 25%;
+    max-width: 30%;
     font-weight: bold;
     background-color: #3882F6;
     color: white;
@@ -182,4 +181,12 @@ li {
     font-size: 20px;
     font-weight: bold;
     color: white
+}
+
+footer {
+    display: flex;
+    background-color: #1F2937; 
+    justify-content: center;
+    align-items: center;
+    padding: 8px 24px
 }

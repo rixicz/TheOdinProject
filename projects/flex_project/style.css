@@ -2,11 +2,11 @@
     box-sizing: border-box; /* so the padding does not increase the width and height of the elements */
     margin: 0;
     font-family: "Roboto", sans-serif;
+    gap: 20px;
 }
 
 body {
     display: flex;
-    gap: 20px;
     flex-direction: column;
 }
 
@@ -24,7 +24,6 @@ nav {
     align-items: center;
     width: 60%;
     margin: auto;
-    gap: 20px;
 }
 
 .header {
@@ -39,7 +38,6 @@ ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    gap: 16px;
 }
 
 li {
@@ -56,13 +54,12 @@ li {
     display: flex;
     flex-direction: column;
     color:#f9faf8;
-    gap: 10px;
 }
 .intro {
     display: flex;
     flex-direction: row;
-    gap: 16px;
 }
+
 .slogan {
     font-size: 48px;
     font-weight: 900;
@@ -82,7 +79,6 @@ li {
     font-weight: bold;
     background-color: #3882F6;
     color: white;
-    border: none;
     border-radius: 10%;
     padding: 8px 24px;
 }
@@ -95,16 +91,6 @@ li {
     border: 1px solid  white;
 }
 
-.info {
-    display: flex;
-    flex-direction: column;
-    margin: auto;
-    align-items: center;
-    background-color: white;
-    width: 60%;
-    gap: 18px;
-}
-
 .info-header {
     display: flex;
     font-size: 36px;
@@ -114,7 +100,7 @@ li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 100%
+    width: 100%;
 }
 
 .object-with-text {
@@ -160,7 +146,7 @@ li {
     background-color: white;
     margin: auto;
     width: 60%;
-    padding: 24px
+    padding: 24px;
 }
 
 .call-box {

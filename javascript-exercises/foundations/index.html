@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <script>
+    let add = (a) => a + 7;
+    let multiply = (a, b) => a * b;
+    function capitalize(word) {
+        let lower = word.slice(1, word.length).toLowerCase()
+        let big = word[0].toUpperCase()
+        let newWord = big + lower
+        return newWord
+    }
+
+    function lastLetter(word) {
+        let char = word[word.length - 1];
+        return char
+    }
+    console.log(add(25))
+    console.log(multiply(8, 7))
+    console.log(capitalize("hELLo"))
+    console.log(lastLetter("fernrir"))
+    
+  </script>
+
+</body>
+</html>

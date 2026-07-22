@@ -23,9 +23,9 @@
             return choice
         }
 
-        function playRound(player, computer) {
-            
-            let result;
+        function playRound(player, computer) {  // for future Patrik - this function can be done in less code
+                                                // by specifying e.g. if (player === "scissors" && computer === "paper")                
+            let result;                         // then there would be only one else statement with the message "Computer won"                    
             if (player === computer) {
                 result = "Draw"
             } else if (player === "scissors") {
@@ -47,7 +47,7 @@
                     result = "You won"
                 }
             } else {
-                result = "You did not type in a valid option. Please, try again."
+                result = "You did not type in a valid option. Please, try again." 
             }
             console.log(result)
             return result
@@ -61,8 +61,8 @@
             
             for (let i = 1; i <= 5; i++) {
                 
-                let humanChoice = (prompt("Type rock, paper or scissors: ")).toLowerCase()
-                let computerChoice = getComputerChoice()
+                let humanChoice = (prompt("Type rock, paper or scissors: ")).toLowerCase() // thought it was not necessary to write a
+                let computerChoice = getComputerChoice()         // whole new function for this                     
                 console.log("Computer chose: " + computerChoice)
                 let msg = playRound(humanChoice, computerChoice)
                 try {

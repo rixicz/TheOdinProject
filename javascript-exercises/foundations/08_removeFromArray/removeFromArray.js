@@ -1,4 +1,5 @@
-const removeFromArray = function() {
+const removeFromArray = function(arr, ...items) {
+    return arr.filter((x) => !(items.includes(x)))
 };
 
 // Do not edit below this line
